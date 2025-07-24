@@ -21,13 +21,13 @@ body {
 }
 
 .container {
-  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 400px;
 }
 
 h1 {
@@ -111,6 +111,9 @@ img{
 }
 
 @media (min-width: 900px) {
+    .container {
+        max-width: 1200px;
+    }
   .card-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
